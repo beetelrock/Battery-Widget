@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal">
+
+	<LinearLayout android:layout_width="0dip"
+		android:layout_weight="1"
+		android:layout_height="fill_parent"
+		android:orientation="horizontal"
+		android:padding="10dip">
+		<ImageView android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/account_image"
+			android:layout_gravity="center"/>
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical">
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="account name"
+				android:textStyle="bold"
+				android:layout_marginLeft="5dip"
+				android:id="@+id/account_name" 
+				android:singleLine="true"/>
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="account type"
+				android:layout_marginLeft="5dip"
+				android:id="@+id/account_type"
+				android:singleLine="true"/>
+		</LinearLayout>
+	</LinearLayout>
+	<ImageView android:layout_width="wrap_content"
+		android:layout_height="fill_parent"
+		android:padding="1dip"
+		android:background="#FFFFFF"/>
+	<CheckBox android:layout_width="wrap_content"
+		android:layout_height="fill_parent"
+		android:focusable="false"
+		android:focusableInTouchMode="false"
+		android:id="@+id/checkSync"/>
+</LinearLayout>

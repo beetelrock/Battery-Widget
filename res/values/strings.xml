@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="save">Save</string>
+    <string name="set_text_color">Text Color</string>
+    <string name="text_color">This will be the text color</string>
+    <string name="battery_info">Battery Information</string>
+    <string name="technology">Technology : </string>
+    <string name="voltage">Voltage : </string>
+    <string name="level">Level : </string>
+    <string name="health">Health : </string>
+    <string name="temperature">Temperature : </string>
+    <string name="status">Status : </string>
+    <string name="app_name">Battery Widget</string>
+    
+    <string name="good">Good</string>
+    <string name="dead">Dead</string>
+    <string name="over_heat">Over Heat</string>
+    <string name="over_voltage">Over Voltage</string>
+    <string name="unknown">Unknown</string>
+<string name="sync_settings">Battery Widget - Sync Settings</string>
+<string name="feature_not_supported">Sorry!!! This feature is not supported on your device</string>
+<string name="wait">Please wait!!!</string>
+</resources>

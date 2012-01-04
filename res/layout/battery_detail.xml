@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.BeetelRockBattery"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="@drawable/ics_back">
+	
+    <LinearLayout android:orientation="horizontal"
+       	android:layout_width="fill_parent"
+       	android:layout_height="wrap_content">
+       	<com.BeetelRockBattery.STToggleButton android:background="@drawable/toggle_button"
+       	    android:src="@drawable/bluetooth"
+       	    android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_bluetooth"/>
+        <com.BeetelRockBattery.STToggleButton android:background="@drawable/toggle_button"
+       	    android:src="@drawable/wifi"
+       	    android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_wifi"/>
+        <com.BeetelRockBattery.STToggleButton android:background="@drawable/toggle_button"
+       	    android:src="@drawable/gps"
+       	    android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_gps"/>
+        <com.BeetelRockBattery.STToggleButton android:background="@drawable/toggle_button"
+       	    android:src="@drawable/sync"
+       	    android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_sync"/>        
+    </LinearLayout>
+	
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="0dip"
+		android:layout_weight="1"
+		android:orientation="vertical">
+		<TextView android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:textStyle="bold" 
+			android:textColor="#FFFFFF" 
+			android:text="@string/battery_info"
+			android:id="@+id/label_info" 
+			android:gravity="center" 
+			android:padding="10dip"/>
+		
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="0dip"
+			android:layout_weight="1">
+			
+			<FrameLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="10dip"
+				android:layout_alignParentRight="true">
+				
+				<com.BeetelRockBattery.AnimatedImageView 
+					android:layout_width="wrap_content"
+					android:layout_alignParentRight="true" 
+					android:layout_height="fill_parent"
+					android:id="@+id/battery_icon"/>
+				<ImageView android:layout_width="wrap_content"
+					android:layout_alignParentRight="true" 
+					android:layout_height="fill_parent" 
+					android:src="@drawable/battery_charging"
+					android:id="@+id/battery_charging"/>
+			</FrameLayout>		
+			
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/labels"
+				android:orientation="vertical">
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="right" 
+					android:textStyle="bold" 
+					android:id="@+id/label_level"
+					android:textColor="#FFFFFF" android:text="@string/level"/>
+				
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="right" 
+					android:textStyle="bold"
+					android:id="@+id/label_temp" 
+					android:textColor="#FFFFFF" android:text="@string/temperature"/>
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="right" 
+					android:textColor="#FFFFFF" 
+					android:textStyle="bold" 
+					android:id="@+id/label_health"
+					android:text="@string/health"/>
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="right" 
+					android:textColor="#FFFFFF" 
+					android:id="@+id/label_voltage"
+					android:textStyle="bold" android:text="@string/voltage"/>
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="right" 
+					android:textColor="#FFFFFF" 
+					android:id="@+id/label_tech"
+					android:textStyle="bold" android:text="@string/technology"/>
+			</LinearLayout>
+			
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/values"
+				android:orientation="vertical"
+				android:layout_toRightOf="@id/labels"
+				android:paddingLeft="10dip">
+			
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/level"
+					android:textColor="#FFFFFF" 
+					android:textStyle="bold"/>
+				
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/temperature"
+					android:textColor="#FFFFFF" 
+					android:textStyle="bold"/>
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/health"
+					android:textColor="#FFFFFF" 
+					android:textStyle="bold"/>
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/voltage"
+					android:textColor="#FFFFFF" 
+					android:textStyle="bold"/>
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/technology"
+					android:textColor="#FFFFFF" 
+					android:textStyle="bold"/>
+				
+			</LinearLayout>
+		</RelativeLayout>
+	</LinearLayout>
+	<ImageView android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="#000000"
+		android:padding="1dip"/>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:padding="7dip">
+		<ImageButton android:layout_width="0dip"
+		    android:layout_weight="1"
+			android:background="#00000000"
+			android:id="@+id/more_details"
+			android:src="@drawable/more_options" 
+			android:layout_height="wrap_content"/>
+		<ImageView android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:background="#000000"
+			android:padding="1dip"/>
+		<ImageButton android:layout_width="0dip"
+		    android:layout_weight="1"
+			android:background="#00000000"
+			android:id="@+id/customize"
+			android:src="@drawable/customization_button" 
+			android:layout_height="wrap_content"/>
+	</LinearLayout>	
+</LinearLayout>

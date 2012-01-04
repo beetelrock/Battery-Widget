@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:maxLevel="0" android:drawable="@drawable/battery_empty"/>
+    
+     
+    <item android:maxLevel="10">
+        <animation-list
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:oneshot="false">
+            <item android:drawable="@drawable/battery_10" android:duration="1000" />
+            <item android:drawable="@drawable/battery_20" android:duration="500" />
+            <item android:drawable="@drawable/battery_pink_30" android:duration="500" />
+            <item android:drawable="@drawable/battery_pink_40" android:duration="500" />
+            <item android:drawable="@drawable/battery_pink_50" android:duration="500" />
+            <item android:drawable="@drawable/battery_pink_60" android:duration="500" />
+            <item android:drawable="@drawable/battery_pink_70" android:duration="500" />
+            <item android:drawable="@drawable/battery_pink_80" android:duration="500" />
+            <item android:drawable="@drawable/battery_pink_90" android:duration="500" />
+            <item android:drawable="@drawable/battery_pink_100" android:duration="500" />
+        </animation-list>
+    </item>
+    
+    <item android:maxLevel="20">
+        <animation-list
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:oneshot="false">
+            <item android:drawable="@drawable/battery_20" android:duration="1000" />
+            <item android:drawable="@drawable/battery_pink_30" android:duration="500" />
+            <item android:drawable="@drawable/battery_pink_40" android:duration="500" />
+            <item android:drawable="@drawable/battery_pink_50" android:duration="500" />
+            <item android:drawable="@drawable/battery_pink_60" android:duration="500" />
+            <item android:drawable="@drawable/battery_pink_70" android:duration="500" />
+            <item android:drawable="@drawable/battery_pink_80" android:duration="500" />
+            <item android:drawable="@drawable/battery_pink_90" android:duration="500" />
+            <item android:drawable="@drawable/battery_pink_100" android:duration="500" />
+        </animation-list>
+    </item>
+    
+    <item android:maxLevel="30">
+        <animation-list
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:oneshot="false">
+            <item android:drawable="@drawable/battery_pink_30" android:duration="500" />
+            <item android:drawable="@drawable/battery_pink_40" android:duration="500" />
+            <item android:drawable="@drawable/battery_pink_50" android:duration="500" />
+            <item android:drawable="@drawable/battery_pink_60" android:duration="500" />
+            <item android:drawable="@drawable/battery_pink_70" android:duration="500" />
+            <item android:drawable="@drawable/battery_pink_80" android:duration="500" />
+            <item android:drawable="@drawable/battery_pink_90" android:duration="500" />
+            <item android:drawable="@drawable/battery_pink_100" android:duration="500" />
+        </animation-list>
+    </item>
+    
+    <item android:maxLevel="40">
+        <animation-list
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:oneshot="false">
+            <item android:drawable="@drawable/battery_pink_40" android:duration="500" />
+            <item android:drawable="@drawable/battery_pink_50" android:duration="500" />
+            <item android:drawable="@drawable/battery_pink_60" android:duration="500" />
+            <item android:drawable="@drawable/battery_pink_70" android:duration="500" />
+            <item android:drawable="@drawable/battery_pink_80" android:duration="500" />
+            <item android:drawable="@drawable/battery_pink_90" android:duration="500" />
+            <item android:drawable="@drawable/battery_pink_100" android:duration="500" />
+        </animation-list>
+    </item>
+    
+    <item android:maxLevel="50">
+        <animation-list
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:oneshot="false">
+            <item android:drawable="@drawable/battery_pink_50" android:duration="500" />
+            <item android:drawable="@drawable/battery_pink_60" android:duration="500" />
+            <item android:drawable="@drawable/battery_pink_70" android:duration="500" />
+            <item android:drawable="@drawable/battery_pink_80" android:duration="500" />
+            <item android:drawable="@drawable/battery_pink_90" android:duration="500" />
+            <item android:drawable="@drawable/battery_pink_100" android:duration="500" />
+        </animation-list>
+    </item>
+    
+    <item android:maxLevel="60">
+        <animation-list
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:oneshot="false">
+            <item android:drawable="@drawable/battery_pink_60" android:duration="500" />
+            <item android:drawable="@drawable/battery_pink_70" android:duration="500" />
+            <item android:drawable="@drawable/battery_pink_80" android:duration="500" />
+            <item android:drawable="@drawable/battery_pink_90" android:duration="500" />
+            <item android:drawable="@drawable/battery_pink_100" android:duration="500" />
+        </animation-list>
+    </item>
+    
+    <item android:maxLevel="70">
+        <animation-list
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:oneshot="false">
+            <item android:drawable="@drawable/battery_pink_70" android:duration="500" />
+            <item android:drawable="@drawable/battery_pink_80" android:duration="500" />
+            <item android:drawable="@drawable/battery_pink_90" android:duration="500" />
+            <item android:drawable="@drawable/battery_pink_100" android:duration="500" />
+        </animation-list>
+    </item>
+    
+    <item android:maxLevel="80">
+        <animation-list
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:oneshot="false">
+            <item android:drawable="@drawable/battery_pink_80" android:duration="500" />
+            <item android:drawable="@drawable/battery_pink_90" android:duration="500" />
+            <item android:drawable="@drawable/battery_pink_100" android:duration="500" />
+        </animation-list>
+    </item>
+    
+    <item android:maxLevel="90">
+        <animation-list
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:oneshot="false">
+            <item android:drawable="@drawable/battery_pink_90" android:duration="500" />
+            <item android:drawable="@drawable/battery_pink_100" android:duration="500" />
+        </animation-list>
+    </item>
+    
+     <item android:maxLevel="100" android:drawable="@drawable/battery_pink_100"/>
+    
+</level-list>

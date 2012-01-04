@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/ics_back"
+	android:orientation="vertical">
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/config_skin_background"
+		android:padding="10dip">
+		<TextView android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:textStyle="bold" 
+			android:textColor="#FFFFFF"
+			android:layout_centerVertical="true"
+			android:gravity="center"
+			android:id="@+id/config_text_color" 
+			android:text="@string/text_color"/>
+		<FrameLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="10dip"
+			android:layout_alignParentRight="true" android:layout_centerVertical="true">
+			<ImageView android:layout_width="wrap_content"
+				android:layout_height="fill_parent"
+				android:background="@drawable/battery_green_50"
+				android:id="@+id/config_battery_icon"/>
+		</FrameLayout>
+	</RelativeLayout>
+	
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="0dip"
+		android:layout_weight="1"
+		android:fillViewport="true"
+		android:scrollbarStyle="insideInset">
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:padding="5dip"
+			android:orientation="vertical">
+			<Gallery android:id="@+id/battery_skins" 
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"/>
+				
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="wrap_content" 
+				android:text="@string/set_text_color" 
+				android:textColor="#858585" 
+				android:textStyle="bold"/>
+				
+			<RelativeLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:padding="2dip">
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="R"
+					android:textColor="#858585" 
+					android:textStyle="bold"
+					android:id="@+id/color_R"
+					android:layout_centerVertical="true"/>
+				<SeekBar android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_toRightOf="@id/color_R"
+					android:layout_marginLeft="10dip"
+					android:padding="10dip"
+					android:id="@+id/seek_R"
+					android:layout_centerVertical="true"/>
+			</RelativeLayout>
+			
+			<RelativeLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:padding="2dip">
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="G"
+					android:textColor="#858585" 
+					android:textStyle="bold"
+					android:id="@+id/color_G"
+					android:layout_centerVertical="true"/>
+				<SeekBar android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_toRightOf="@id/color_G"
+					android:layout_marginLeft="10dip"
+					android:padding="10dip"
+					android:id="@+id/seek_G"
+					android:layout_centerVertical="true"/>
+			</RelativeLayout>
+			
+			<RelativeLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:padding="2dip">
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="B"
+					android:textColor="#858585" 
+					android:textStyle="bold"
+					android:id="@+id/color_B"
+					android:layout_centerVertical="true"/>
+				<SeekBar android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_toRightOf="@id/color_B"
+					android:layout_marginLeft="10dip"
+					android:padding="10dip"
+					android:id="@+id/seek_B"
+					android:layout_centerVertical="true"/>
+			</RelativeLayout>
+		</LinearLayout>
+	</ScrollView>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<Button android:id="@+id/save"
+			android:layout_width="0dip"
+			android:layout_weight="1"
+			android:layout_height="wrap_content" 
+			android:padding="10dip" 
+			android:text="@string/save"/>
+	</LinearLayout>
+</LinearLayout>
